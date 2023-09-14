@@ -1,22 +1,24 @@
-<?php include "inc/header.php" ?>
 
-Abstract Factory patterns work around a super-factory which creates other factories. This factory is also called as factory of factories. This type of design pattern comes under creational pattern as this pattern provides one of the best ways to create an object.
-
-In Abstract Factory pattern an interface is responsible for creating a factory of related objects without explicitly specifying their classes. Each generated factory can give the objects as per the Factory pattern.
-<hr />
-<h1>Abstract Factory patterns</h1>
-<hr />
 <?php
+// 
+// Abstract Factory patterns work around a super-factory which creates other factories. This factory is also called as factory of factories. This type of design pattern comes under creational pattern as this pattern provides one of the best ways to create an object.
+
+// In Abstract Factory pattern an interface is responsible for creating a factory of related objects without explicitly specifying their classes. Each generated factory can give the objects as per the Factory pattern.
+//  
+// <h1>Abstract Factory patterns</h1>
+//  
 class Car
 {
-    function getName(){
+    function getName()
+    {
         echo "My name is car\n";
     }
 }
 
 class Truck
 {
-    function getName(){
+    function getName()
+    {
         echo "My Name is Truck\n";
     }
 }
@@ -63,4 +65,4 @@ $truck->getName();
 
 ?>
 
-<?php include "inc/footer.php" ?>
+ 
