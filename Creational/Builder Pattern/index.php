@@ -1,13 +1,11 @@
-<?php include "inc/header.php" ?>
-Builder pattern builds a complex object using simple objects and using a step by step approach. This type of design pattern comes under creational pattern as this pattern provides one of the best ways to create an object.
-<br>
-A Builder class builds the final object step by step. This builder is independent of other objects.
 
-<hr>
-<h1>Builder Pattern</h1>
-<hr>
 <?php
+// Builder pattern builds a complex object using simple objects and using a step by step approach. This type of design pattern comes under creational pattern as this pattern provides one of the best ways to create an object.
+// <br>
+// A Builder class builds the final object step by step. This builder is independent of other objects.
 
+// <hr>
+// <h1>Builder Pattern</h1>
 // Product class
 class Product
 {
@@ -46,7 +44,7 @@ interface ProductBuilder
 }
 
 // Concrete Builder
-class ConcreteProductBuilder implements ProductBuilder
+class TvProductBuilder implements ProductBuilder
 {
     private $product;
 
@@ -88,13 +86,9 @@ class Director
 }
 
 // Client code
-$builder = new ConcreteProductBuilder();
+$builder = new TvProductBuilder();
 $director = new Director();
 $director->buildProduct($builder);
 $product = $builder->build();
 $product->show();
-
-
 ?>
-
-<?php include "inc/footer.php" ?>
