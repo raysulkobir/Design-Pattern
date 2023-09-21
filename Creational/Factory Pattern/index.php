@@ -1,7 +1,4 @@
-<?php include "inc/header.php" ?>
-Factory method is a creational design pattern which solves the problem of creating product objects without specifying their concrete classes
-<h1>Factory Pattern</h1>
-<hr />
+
 <?php
 
 // Product interface
@@ -61,4 +58,3 @@ echo $productB->getName(); // Output: Product B
 
 ?>
 
-<?php include "inc/footer.php" ?>

@@ -72,7 +72,9 @@ class VehicleDirector
     }
 }
 
-$kiaCarBuilder = new KiaCarBuilder(new Vehicle());
-$vehicleDirector = new VehicleDirector();
+// $kiaCarBuilder = new KiaCarBuilder(new Vehicle());
+// $vehicleDirector = new VehicleDirector();
+// print_r($vehicleDirector->build($kiaCarBuilder));
 
-// $kiaCar = (new VehicleDirector())->build(new KiaCarBuilder(new Vehicle()));
+$kiaCar = (new VehicleDirector())->build(new KiaCarBuilder(new Vehicle()));
+print_r($kiaCar);
